@@ -73,6 +73,70 @@
       "scan_interval": {
         "name": "Scan interval"
       }
+    },
+    "climate": {
+      "lge_ac": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "auto": "Auto",
+              "low": "Low",
+              "medium": "Medium",
+              "high": "High",
+              "diffuse": "Auto",
+              "SLOW": "Minimum",
+              "SLOW_LOW": "Very low",
+              "LOW_MID": "Low-medium",
+              "MID_HIGH": "Medium-high",
+              "POWER": "Power",
+              "R_LOW": "Right low",
+              "R_MID": "Right medium",
+              "R_HIGH": "Right high",
+              "L_LOW": "Left low",
+              "L_MID": "Left medium",
+              "L_HIGH": "Left high"
+            }
+          },
+          "swing_mode": {
+            "state": {
+              "Off": "Off",
+              "Swing": "Swing",
+              "Top": "Top",
+              "MiddleTop1": "Position 2 (high)",
+              "MiddleTop2": "Position 3 (upper middle)",
+              "MiddleBottom2": "Position 4 (lower middle)",
+              "MiddleBottom1": "Position 5 (low)",
+              "Bottom": "Bottom",
+              "Left": "Left",
+              "MiddleLeft": "Middle left",
+              "Center": "Center",
+              "MiddleRight": "Middle right",
+              "Right": "Right",
+              "LeftHalf": "Left half",
+              "RightHalf": "Right half"
+            }
+          },
+          "swing_horizontal_mode": {
+            "state": {
+              "Off": "Off",
+              "Swing": "Swing",
+              "Top": "Top",
+              "MiddleTop1": "Position 2 (high)",
+              "MiddleTop2": "Position 3 (upper middle)",
+              "MiddleBottom2": "Position 4 (lower middle)",
+              "MiddleBottom1": "Position 5 (low)",
+              "Bottom": "Bottom",
+              "Left": "Left",
+              "MiddleLeft": "Middle left",
+              "Center": "Center",
+              "MiddleRight": "Middle right",
+              "Right": "Right",
+              "LeftHalf": "Left half",
+              "RightHalf": "Right half"
+            }
+          }
+        }
+      }
     }
   }
 }

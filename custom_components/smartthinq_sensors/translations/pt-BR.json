@@ -48,5 +48,71 @@
       }
     },
     "title": "Sensores SmartThinQ LGE"
+  },
+  "entity": {
+    "climate": {
+      "lge_ac": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "auto": "Automático",
+              "low": "Baixa",
+              "medium": "Média",
+              "high": "Alta",
+              "diffuse": "Automático",
+              "SLOW": "Mínima",
+              "SLOW_LOW": "Muito baixa",
+              "LOW_MID": "Baixa-média",
+              "MID_HIGH": "Média-alta",
+              "POWER": "Potente",
+              "R_LOW": "Direita baixa",
+              "R_MID": "Direita média",
+              "R_HIGH": "Direita alta",
+              "L_LOW": "Esquerda baixa",
+              "L_MID": "Esquerda média",
+              "L_HIGH": "Esquerda alta"
+            }
+          },
+          "swing_mode": {
+            "state": {
+              "Off": "Desligado",
+              "Swing": "Oscilar",
+              "Top": "Em cima",
+              "MiddleTop1": "Posição 2 (alta)",
+              "MiddleTop2": "Posição 3 (meio-alta)",
+              "MiddleBottom2": "Posição 4 (meio-baixa)",
+              "MiddleBottom1": "Posição 5 (baixa)",
+              "Bottom": "Em baixo",
+              "Left": "Esquerda",
+              "MiddleLeft": "Meio-esquerda",
+              "Center": "Centro",
+              "MiddleRight": "Meio-direita",
+              "Right": "Direita",
+              "LeftHalf": "Metade esquerda",
+              "RightHalf": "Metade direita"
+            }
+          },
+          "swing_horizontal_mode": {
+            "state": {
+              "Off": "Desligado",
+              "Swing": "Oscilar",
+              "Top": "Em cima",
+              "MiddleTop1": "Posição 2 (alta)",
+              "MiddleTop2": "Posição 3 (meio-alta)",
+              "MiddleBottom2": "Posição 4 (meio-baixa)",
+              "MiddleBottom1": "Posição 5 (baixa)",
+              "Bottom": "Em baixo",
+              "Left": "Esquerda",
+              "MiddleLeft": "Meio-esquerda",
+              "Center": "Centro",
+              "MiddleRight": "Meio-direita",
+              "Right": "Direita",
+              "LeftHalf": "Metade esquerda",
+              "RightHalf": "Metade direita"
+            }
+          }
+        }
+      }
+    }
   }
 }

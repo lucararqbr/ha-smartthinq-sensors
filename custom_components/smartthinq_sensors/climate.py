@@ -199,6 +199,7 @@ class LGEACClimate(LGEClimate):
 
     _attr_has_entity_name = True
     _attr_name = None
+    _attr_translation_key = "lge_ac"
 
     def __init__(self, api: LGEDevice) -> None:
         """Initialize the climate."""
