@@ -73,14 +73,14 @@
       "scan_interval": { "name": "Intervalo de atualização" }
     },
     "switch": {
-      "power": { "name": "Energia" },
+      "power": { "name": "Power" },
       "ionizer": { "name": "Ionizador" },
-      "jet_mode": { "name": "Modo Jet" },
+      "jet_mode": { "name": "Jato" },
       "display_light": { "name": "Luz do display" },
       "silent_mode": { "name": "Modo silencioso" }
     },
     "sensor": {
-      "room_temperature": { "name": "Temperatura ambiente" },
+      "room_temperature": { "name": "Temperatura do ambiente" },
       "hot_water_temperature": { "name": "Temperatura da água quente" },
       "in_water_temperature": { "name": "Temperatura da água de entrada" },
       "out_water_temperature": { "name": "Temperatura da água de saída" },
@@ -90,36 +90,26 @@
       "pm10": { "name": "PM10" },
       "pm25": { "name": "PM2,5" },
       "filter_remaining_life": { "name": "Vida útil restante do filtro" },
-      "sleep_time": { "name": "Tempo de repouso" }
+      "sleep_time": { "name": "Sleep time" }
     },
     "climate": {
       "lge_ac": {
         "state_attributes": {
           "fan_mode": {
             "state": {
-              "auto": "Automático",
               "low": "Baixa",
-              "medium": "Média",
-              "high": "Alta",
-              "diffuse": "Automático",
-              "SLOW": "Mínima",
-              "SLOW_LOW": "Muito baixa",
               "LOW_MID": "Baixa-média",
+              "medium": "Média",
               "MID_HIGH": "Média-alta",
-              "POWER": "Potente",
-              "R_LOW": "Direita baixa",
-              "R_MID": "Direita média",
-              "R_HIGH": "Direita alta",
-              "L_LOW": "Esquerda baixa",
-              "L_MID": "Esquerda média",
-              "L_HIGH": "Esquerda alta"
+              "high": "Alta",
+              "diffuse": "Automático"
             }
           },
           "swing_mode": {
             "state": {
               "Off": "Desligado",
               "Swing": "Oscilar",
-              "Top": "Em cima",
+              "Top": "Posição 1 (em cima)",
               "MiddleTop1": "Posição 2 (alta)",
               "MiddleTop2": "Posição 3 (meio-alta)",
               "MiddleBottom2": "Posição 4 (meio-baixa)",
@@ -138,7 +128,7 @@
             "state": {
               "Off": "Desligado",
               "Swing": "Oscilar",
-              "Top": "Em cima",
+              "Top": "Posição 1 (em cima)",
               "MiddleTop1": "Posição 2 (alta)",
               "MiddleTop2": "Posição 3 (meio-alta)",
               "MiddleBottom2": "Posição 4 (meio-baixa)",
