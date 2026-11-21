@@ -93,7 +93,7 @@ REFRIGERATOR_SWITCH: tuple[ThinQSwitchEntityDescription, ...] = (
 AC_SWITCH: tuple[ThinQSwitchEntityDescription, ...] = (
     ThinQSwitchEntityDescription(
         key=ATTR_POWER,
-        name="Power",
+        translation_key="power",
         icon="mdi:power",
         entity_category=EntityCategory.CONFIG,
         value_fn=lambda x: x.is_power_on,
@@ -102,14 +102,14 @@ AC_SWITCH: tuple[ThinQSwitchEntityDescription, ...] = (
     ),
     ThinQSwitchEntityDescription(
         key=AirConditionerFeatures.MODE_AIRCLEAN,
-        name="Ionizer",
+        translation_key="ionizer",
         icon="mdi:pine-tree",
         turn_off_fn=lambda x: x.device.set_mode_airclean(False),
         turn_on_fn=lambda x: x.device.set_mode_airclean(True),
     ),
     ThinQSwitchEntityDescription(
         key=AirConditionerFeatures.MODE_JET,
-        name="Jet mode",
+        translation_key="jet_mode",
         icon="mdi:turbine",
         entity_category=EntityCategory.CONFIG,
         turn_off_fn=lambda x: x.device.set_mode_jet(False),
@@ -118,7 +118,7 @@ AC_SWITCH: tuple[ThinQSwitchEntityDescription, ...] = (
     ),
     ThinQSwitchEntityDescription(
         key=AirConditionerFeatures.LIGHTING_DISPLAY,
-        name="Display light",
+        translation_key="display_light",
         icon="mdi:wall-sconce-round",
         entity_category=EntityCategory.CONFIG,
         turn_off_fn=lambda x: x.device.set_lighting_display(False),
@@ -126,7 +126,7 @@ AC_SWITCH: tuple[ThinQSwitchEntityDescription, ...] = (
     ),
     ThinQSwitchEntityDescription(
         key=AirConditionerFeatures.MODE_AWHP_SILENT,
-        name="Silent mode",
+        translation_key="silent_mode",
         icon="mdi:ear-hearing-off",
         turn_off_fn=lambda x: x.device.set_mode_awhp_silent(False),
         turn_on_fn=lambda x: x.device.set_mode_awhp_silent(True),

@@ -74,6 +74,26 @@
         "name": "Scan interval"
       }
     },
+    "switch": {
+      "power": { "name": "Power" },
+      "ionizer": { "name": "Ionizer" },
+      "jet_mode": { "name": "Jet mode" },
+      "display_light": { "name": "Display light" },
+      "silent_mode": { "name": "Silent mode" }
+    },
+    "sensor": {
+      "room_temperature": { "name": "Room temperature" },
+      "hot_water_temperature": { "name": "Hot water temperature" },
+      "in_water_temperature": { "name": "In water temperature" },
+      "out_water_temperature": { "name": "Out water temperature" },
+      "energy_current": { "name": "Energy current" },
+      "humidity": { "name": "Humidity" },
+      "pm1": { "name": "PM1" },
+      "pm10": { "name": "PM10" },
+      "pm25": { "name": "PM2.5" },
+      "filter_remaining_life": { "name": "Filter Remaining Life" },
+      "sleep_time": { "name": "Sleep time" }
+    },
     "climate": {
       "lge_ac": {
         "state_attributes": {

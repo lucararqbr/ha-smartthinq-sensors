@@ -4,6 +4,7 @@
       "single_instance_allowed": "Somente uma única configuração de sensores SmartThinQ LGE é permitida.",
       "no_smartthinq_devices": "Nenhum dispositivo SmartThinQ encontrado. Configuração do componente abortada.",
       "unsupported_version": "Esta integração requer pelo menos a versão {req_ver} do HomeAssistant, você está executando a versão {run_ver}.",
+      "reauth_successful": "Configuração concluída com sucesso.",
       "reconfigured": "Configuração concluída com sucesso."
     },
     "error": {
@@ -24,10 +25,10 @@
           "password": "Senha",
           "region": "Código do país",
           "language": "Código do idioma",
-          "use_redirect": "Use o método de autenticação de URL de redirecionamento.",
-          "use_ha_session": "Compartilhe a conexão HTTP do Home Assistant (pode causar erros de SSL)",
+          "use_redirect": "Usar autenticação por URL de redirecionamento",
+          "use_ha_session": "Compartilhar a conexão HTTP do Home Assistant (pode causar erros de SSL)",
           "use_tls_v1": "Forçar o uso do protocolo TLSv1 (às vezes é necessário)",
-          "exclude_dh": "Não use a cifra DH (no caso do erro 'chave dh muito pequena')"
+          "exclude_dh": "Não usar a cifra DH (caso ocorra o erro 'dh key too small')"
         },
         "description": "Insira as informações de acesso da sua conta SmartThinQ."
       },
@@ -41,15 +42,56 @@
       },
       "token": {
         "data": {
-          "token": "Atualizar Token"
+          "token": "Token de atualização"
         },
         "description": "Salve o token gerado para uso futuro e confirme para concluir a configuração.",
-        "title": "Sensores SmartThinQ LGE - Atualizar token"
+        "title": "Sensores SmartThinQ LGE - Novo token de atualização"
+      },
+      "reauth_confirm": {
+        "data": {
+          "reauth_cred": "Marque se precisar informar novas credenciais do ThinQ"
+        },
+        "title": "Sensores SmartThinQ LGE - Reautenticação",
+        "description": "Erro de credencial ThinQ inválida; configuração abortada. Use o app LG no celular e verifique se há novos Termos de Serviço para aceitar; depois confirme para recarregar a integração."
       }
     },
     "title": "Sensores SmartThinQ LGE"
   },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opções do SmartThinQ",
+        "description": "Frequência (em segundos) com que a integração consulta a nuvem da LG. Padrão: 300 (5 min). Valores baixos arriscam o bloqueio da conta LG por 24 h. Aumente se tiver muitos aparelhos ou se for bloqueado.",
+        "data": {
+          "scan_interval": "Intervalo de atualização (segundos)"
+        }
+      }
+    }
+  },
   "entity": {
+    "number": {
+      "scan_interval": { "name": "Intervalo de atualização" }
+    },
+    "switch": {
+      "power": { "name": "Energia" },
+      "ionizer": { "name": "Ionizador" },
+      "jet_mode": { "name": "Modo Jet" },
+      "display_light": { "name": "Luz do display" },
+      "silent_mode": { "name": "Modo silencioso" }
+    },
+    "sensor": {
+      "room_temperature": { "name": "Temperatura ambiente" },
+      "hot_water_temperature": { "name": "Temperatura da água quente" },
+      "in_water_temperature": { "name": "Temperatura da água de entrada" },
+      "out_water_temperature": { "name": "Temperatura da água de saída" },
+      "energy_current": { "name": "Consumo de energia atual" },
+      "humidity": { "name": "Umidade" },
+      "pm1": { "name": "PM1" },
+      "pm10": { "name": "PM10" },
+      "pm25": { "name": "PM2,5" },
+      "filter_remaining_life": { "name": "Vida útil restante do filtro" },
+      "sleep_time": { "name": "Tempo de repouso" }
+    },
     "climate": {
       "lge_ac": {
         "state_attributes": {
